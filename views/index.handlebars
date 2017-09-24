@@ -1,0 +1,74 @@
+<div clas="row" style="padding-top:30px">
+  <div class="col-xs-12" id="onload">
+    <div class="jumbotron" style="margin-top:30px;justify-content:center;text-align: center">
+      <img class="img-responsive" style="width:180px;margin-left: auto;margin-right: auto" src="./images/price.png" />
+      <h1>Maximum prices! Predictable income </h1>
+      <br/>
+      <p>You are on your way to game changing insights. <br/> Please post your product details.</p>
+    </div>
+  </div>
+  <div class="col-xs-2">
+    <div class='input-group date' id='datetimepicker1'>
+      <input type='text' class="form-control" />
+      <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-calendar"></span>
+      </span>
+    </div>
+
+  </div>
+  <div class="col-sm-2">
+    <div class="input-group">
+      <span class="input-group-addon" id="basic-addon3">Market</span>
+      <input type="text" class="form-control" id="market" aria-describedby="basic-addon3">
+    </div>
+  </div>
+
+  <div class="col-sm-4">
+    <div class="input-group">
+      <span class="input-group-addon" id="basic-addon3">Maximum days of Stock keeping</span>
+      <input type="text" class="form-control" id="stockdays" aria-describedby="basic-addon3">
+    </div>
+  </div>
+  <div class="col-xs-1" id="hello">
+    <select style="display:none" class="selectpicker">
+    <option value="volvo">Tomato</option>
+    </select>
+
+  </div>
+  <div class="col-xs-3">
+    <button class="btn btn-primary btn-group btn-group-justified " type="button" id="predict">
+              Predict
+    </button>
+  </div>
+</div>
+<div class="row">
+
+</div>
+<img style="display: block;margin: auto;width:100px; margin-top:40px" class="loading" src="/images/default.gif" />
+
+<div class="row" id="analytics">
+  <div class="col-sm-12">
+    <h1 class='prediction' style="text-align:center">
+      You should sell product on
+    </h1>
+  </div>
+  <div class="col-xs-12">
+    <svg class="chart" style=" width: 100%;min-height: 400px;margin:0 auto;"></svg>
+  </div>
+</div>
+<div class="prospectivesellers">
+  
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/bootstrap-select.min.js"></script>
+<script type="text/javascript" src="./javascripts/bloudhound.js"></script>
+<script type="text/javascript" src="/bower_components/typeahead.js/src/typeahead/typeahead.js"></script>
+<script type="text/javascript" src="/bower_components/d3/d3.min.js"></script>
+<script type="text/javascript" src="/bower_components/c3/c3.js"></script>
+<script type="text/javascript" src="/bower_components/moment/moment.js"></script>
+<script type="text/javascript" src="/bower_components/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
+<link rel="stylesheet" href="/bower_components/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css"
+/>
+<link rel="stylesheet" href="/bower_components/c3/c3.css" />
+
+<script type="text/javascript" src="./javascripts/predict.js"></script>
